@@ -7,12 +7,18 @@
     ----------------------------------------------------------------- 
 
 
-Hi there! Welcome to Cloud9 IDE!
+Make your current directory a git repository by running:
+git init
 
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
+Using the SSH link you copied, add the remote repository as the origin:
+git remote add origin git@github.com:yourname/yourrepository.git
 
-Happy coding!
-The Cloud9 IDE team
+Check your files status/changes,
+Add your files and commits, 
+Push your changes:
+git status
+
+git add .
+git commit -m "First commit"
+
+git push -u origin master
