@@ -1,0 +1,7 @@
+// Java Basics
+
+在 -128 ~ 127 的Integer 值，并且以Integer x = value;的方式赋值的Integer 值
+在进行 == 和equals 比较时，都会返回true，
+因为Java里面对处在 -128 ~ 127 之间的Integer 值，用的是原生数据类型int，会在内存里供重用，
+也就是说这之间的Integer 值进行 == 比较时只是进行int原生数据类型的数值比较，
+而超出-128~127 的范围，进行 == 比较时是进行地址及数值比较。
