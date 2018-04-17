@@ -25,4 +25,14 @@ git add .
 
 git commit -m "First commit"
 
-git push origin master
+git push -u origin master
+
+notes:
+-m <msg>
+--message=<msg>
+Use the given <msg> as the commit message.
+
+-u
+--update
+Update the index just where it already has an entry matching <pathspec>. 
+This removes as well as modifies index entries to match the working tree, but adds no new files.
