@@ -25,4 +25,4 @@ git add .
 
 git commit -m "First commit"
 
-git push -u origin master
+git push origin master
