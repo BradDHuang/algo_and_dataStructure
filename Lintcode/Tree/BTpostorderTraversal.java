@@ -33,12 +33,16 @@ public class Main {
         while (!stack.isEmpty()) {
             TreeNode cur = stack.pop();
 
-            res.add(0, cur.val);
+            // res.add(0, cur.val);
 //            res.addFirst(cur.val);
-
+            res.add(cur.val);
+            
             if (cur.left != null) stack.push(cur.left);
             if (cur.right != null) stack.push(cur.right);
         }
+        
+        Collections.reverse(res);
+        
         return res;
     }
 
