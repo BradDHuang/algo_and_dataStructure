@@ -10,7 +10,7 @@ package com.company;
 // lc 134.
 import java.util.HashMap;
 
-public class Main {
+public class LRUCache {
     // HashMap<> + Doubly LinkedList.
     // build a class
     private static class Node {
@@ -96,7 +96,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        LRUCache(2);
+        new LRUCache(2);
         set(2, 1);
         set(1, 1);
         System.out.println(get(2)); // 1
