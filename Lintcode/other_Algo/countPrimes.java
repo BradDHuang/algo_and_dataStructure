@@ -2,6 +2,7 @@ package com.company;
 
 // leetcode 204.
 //  Count the number of prime numbers less than a non-negative number, n.
+// Note: also explained in Codility lessons.
 
 public class Main {
 
