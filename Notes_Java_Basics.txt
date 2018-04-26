@@ -15,3 +15,10 @@ If synchronization becomes an issue, you may also look at ConcurrentHashMap.
 因为Java里面对处在 -128 ~ 127 之间的Integer 值，用的是原生数据类型int，会在内存里供重用，
 也就是说这之间的Integer 值进行 == 比较时只是进行int原生数据类型的数值比较，
 而超出-128~127 的范围，进行 == 比较时是进行地址及数值比较。
+
+Everything in a Java program not explicitly set to something by the programmer, is initialized to a zero value.
+For references (anything that holds an object): null.
+For int/short/byte/long: 0.
+For float/double: 0.0
+For boolean: false.
+For char: the null character '\u0000' (whose decimal equivalent is 0).
