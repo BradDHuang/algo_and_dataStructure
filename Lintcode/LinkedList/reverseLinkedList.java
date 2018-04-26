@@ -1,6 +1,6 @@
 package com.company;
 
-// leetcode 35.
+// lc 35.
 
 public class Main {
 

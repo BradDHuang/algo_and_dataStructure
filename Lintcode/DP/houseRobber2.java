@@ -1,6 +1,6 @@
 package com.company;
 
-// leetcode 534.
+// lc 534.
 // This time, all houses at this place are arranged in a circle.
 // That means the first house is the neighbor of the last one.
 
