@@ -19,9 +19,11 @@ public class Main {
 
         int sign = 1;
         Stack<Integer> stack = new Stack<>();
+        int num;
         for (int i = 0; i < s.length(); i++) {
             if (Character.isDigit(s.charAt(i))) {
-                int num = s.charAt(i) - '0';
+                // int num = s.charAt(i) - '0';
+                num = s.charAt(i) - '0';
                 while (i + 1 < s.length() && Character.isDigit(s.charAt(i + 1))) {
                     num = num * 10 + (s.charAt(i + 1) - '0');
 
