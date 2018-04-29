@@ -1,6 +1,7 @@
 package com.company;
 
 // LC 372. Delete Node in the Middle of Singly Linked List
+// Write a function to delete a node (except the tail) in a singly linked list, given only access to that node.
 
 class ListNode {
     int val;
