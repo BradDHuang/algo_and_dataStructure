@@ -2,6 +2,14 @@ package com.company;
 
 // lc 920.
 
+// public class Interval {
+//     int start, end;
+//     Interval(int start, int end) {
+//         this.start = start;
+//         this.end = end;
+//     }
+// }
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
