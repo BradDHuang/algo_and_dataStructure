@@ -27,6 +27,20 @@ public class Main {
         // note: when slow/fast met at point A, say slow had N steps, then fast must had 2*N steps;
         // we set fast to index 0 and it moves 1 step by 1 step, and then slow/fast will finally met at point A again,
         // so, they must have met at the start of the cycle.
+        
+        // O(n logn) with binary search and the array is not sorted.
+        int min = 1, max = nums.length - 1;
+        int cnt, mid;
+        while (min <= max) {
+            mid = (max - min) / 2 + min;
+            cnt = 0;
+            for (int num : nums) {
+                if (num <= mid) cnt++;
+            }
+            if (cnt > mid) max = mid - 1;
+            else min = mid + 1;
+        }
+        return min;
     }
 
     public static void main(String[] args) {
