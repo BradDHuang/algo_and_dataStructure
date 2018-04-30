@@ -37,7 +37,7 @@ public class Main {
             for (int num : nums) {
                 if (num <= mid) cnt++;
             }
-            if (cnt > mid) max = mid - 1;
+            if (cnt > mid) max = mid - 1; // 这里如果用max = mid 会造成死循环，e.g. [1, 1].
             else min = mid + 1;
         }
         return min;
