@@ -18,7 +18,7 @@ public class NumArray {
     public static void update(int i, int val) {
         int diff = val - nums[i];
         nums[i] = val;
-        for (i++; i < tree.length; i += (i & (-i))) tree[i] += diff; // (i & (-i) is lowbit.
+        for (i++; i < tree.length; i += (i & (-i))) tree[i] += diff; // i & (-i) is lowbit.
     }
 
     public static int sumRange(int i, int j) {
@@ -26,7 +26,7 @@ public class NumArray {
     }
     private static int sum(int k) {
         int sum = 0;
-        for (int i = k; i > 0; i -= (i & (-i))) sum += tree[i]; // (i & (-i) is lowbit.
+        for (int i = k; i > 0; i -= (i & (-i))) sum += tree[i]; // i & (-i) is lowbit.
         return sum;
     }
 
