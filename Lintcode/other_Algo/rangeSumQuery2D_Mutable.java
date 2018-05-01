@@ -32,6 +32,18 @@ public class NumMatrix {
             }
         }
     }
+    // public void update(int i, int col, int val) {
+    //     int diff = val - arr[i][col];
+    //     arr[i][col] = val;
+    //     for (i++; i <= n; i = i + lowbit(i)) {
+            
+            // 对每一个i, j 都要从col + 1 开始！
+            
+            // for (int j = col + 1; j <= m; j = j + lowbit(j)) {
+    //             bit[i][j] += diff;
+    //         }
+    //     }
+    // }
 
     public int sumRegion(int row1, int col1, int row2, int col2) {
 
