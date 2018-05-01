@@ -10,6 +10,9 @@ public class Main {
 
     public static List<Integer> countSmaller(int[] nums) {
         // Write your code here
+        // For every element, use binary search to locate the index, which cost O(logn), 
+        // then use O(n) for insertion (in the worst case), so O(logn) can be ignored, 
+        // and there are totally n elements, so runtime will be O(n^2).
         List<Integer> list = new ArrayList<>();
         Integer[] res = new Integer[nums.length];
         int index;
@@ -18,7 +21,7 @@ public class Main {
             res[i] = index; // from "right" to "left".
 //            list.add(nums[i]);
 
-            list.add(index, nums[i]);
+            list.add(index, nums[i]); // O(n) insertion.
         }
         return Arrays.asList(res);
     }
