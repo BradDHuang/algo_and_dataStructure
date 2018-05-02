@@ -19,7 +19,7 @@ public class Main {
 
         HashMap<String, Integer> map = new HashMap<>();
         for (String s : words) {
-            map.put(s, map.getOrDefault(s, 1) + 1);
+            map.put(s, map.getOrDefault(s, 0) + 1);
         }
         // Heap.
         PriorityQueue<Pair> maxHeap =
