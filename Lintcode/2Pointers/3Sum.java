@@ -25,6 +25,12 @@ public class Main {
 //                if (sum == 0) {
                 if (numbers[l] + numbers[h] == target) {
                     res.add(Arrays.asList(numbers[i], numbers[l], numbers[h]));
+                    // List<Integer> triplet = new ArrayList<>();
+                    // triplet.add(-target);
+                    // triplet.add(numbers[l]);
+                    // triplet.add(numbers[h]);
+                    // res.add(triplet);
+                    
                     while (l < h && numbers[l] == numbers[l + 1]) l++; // No dup. solution.
                     while (l < h && numbers[h] == numbers[h - 1]) h--; // No dup. solution.
                     l++;
