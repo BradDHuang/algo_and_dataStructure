@@ -1,6 +1,7 @@
 package com.company;
 
 // leetCode 592.
+// The numerator and denominator of the final result are guaranteed to be valid and in the range of 32-bit int.
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,7 +42,8 @@ public class Main {
         int n = n1 * d2 + n2 * d1;
         int d = d1 * d2;
         if (n == 0) return "0/1"; // corner case.
-        boolean isNegative = n * d < 0;
+        // boolean isNegative = n * d < 0;
+        boolean isNegative = n < 0; // Each fraction (input and output) has format ±numerator/denominator.
 
         // do not forget to get the abs. val!
         n = Math.abs(n);
