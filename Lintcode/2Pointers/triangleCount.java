@@ -25,8 +25,9 @@ public class Main {
         // O(n^2): for loop 每次只循环 mid.
         for (int start = 0; start < S.length - 2; start++) {
             int end = start + 2;
-            for (int mid = start + 1; mid < S.length - 1; mid++) {
+            // for (int mid = start + 1; mid < S.length - 1; mid++) {
 //            for (int mid = start + 1; mid < end; mid++) {
+            for (int mid = start + 1; mid <= end; mid++) {
                 while (end < S.length && S[start] + S[mid] > S[end]) {
 //                    System.out.println(S[start] + " + " + S[mid] + " > " + S[end]);
                     count += end - mid;
