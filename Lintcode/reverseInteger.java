@@ -44,16 +44,17 @@ public class Solution {
         while (n != 0) {
             
             res = res * 10 + n % 10;
-            if (res > max) {
+            // if (res > max) {
+            if (res > max || res < min) {
                 return 0;
             }
             
             n /= 10;
         }
         
-        if (res < min) return 0;
+        // if (res < min) return 0;
         return (int) res;
     }
 }
 
-
+// O(len) time, while len is the # of digits of n; O(1) space.
