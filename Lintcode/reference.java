@@ -17,7 +17,16 @@ public class ReferenceManager {
         // copy value from obj to node
         
         // node.value = obj.value;
-        node = new Node(obj.val);
+        // node = new Node(obj.val);
+        
+        // corner cases:
+        if (obj == null) return;
+        if (node == null) {
+            node = new Node(obj.val);
+        }
+        
+        node.val = obj.val;
+        
     }
 
     public void copyReference(Node obj) {
