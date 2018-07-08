@@ -1,0 +1,21 @@
+
+
+Why Java?
+core-features: 
+    1. "write once, run anywhere" (WORA), meaning that 
+    compiled Java code can run on all platforms 
+    that support Java without the need for recompilation.
+    2. object-oriented.
+    3. class-based.
+    4. concurrent.
+    
+    
+How is "int" stored?
+    two's complement representation.
+    
+    
+
+
+
+
+
