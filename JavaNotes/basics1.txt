@@ -1,0 +1,56 @@
+
+
+// type conversion
+float fNum = 3;
+double dNum = fNum; // 默认转换：“小”数据类型 -> “大”数据类型；
+fNum = (float)dNum; // 强制转换：“大”数据类型 -> “小”数据类型。
+
+float res1 = 3 / 2;     // 1.0
+// “小”数据类型会默认转换为“大”数据类型再运算:
+float res2 = 3.0f / 2;  // 1.5
+float res3 = 3 / 2.0f;  // 1.5
+
+
+// ASCII (0 - 127):
+http://tool.oschina.net/commons?type=4
+// Unicode (0 - 65535):
+https://unicode-table.com/en/#0045
+
+    boolean lessThan = 'a' < 'b'; // true
+    char prevCh = 'a';
+    char nextCh = (char)(prevCh + 25); // z
+//    char toUpperCase = (char)(nextCh - 32); // Z
+//    char toUpperCase = (char)(nextCh - ('a' - 'A')); // Z
+    char toUpperCase = Character.toUpperCase(nextCh); // Z
+    int delta = 'a' - 'A'; // 32 (97 - 65)
+
+
+Arrays:
+    An array is a container object 
+    that holds a fixed number of values of a single type. 
+    The length of an array is established when the array is created. 
+    After creation, its length is fixed. 
+    
+    int[] score1 = new int[]{90, 95, 90, 80, 100, 90};
+    int[] score2 = {90, 95, 90, 80, 100, 95};
+    int[] score3 = new int[10];
+    System.out.println(score1[0]); // 90
+    System.out.println(score2[5]); // 95
+    System.out.println(score3[9]); // 0
+    
+    int[][] matrix1 = new int[][]{
+        {1, 4, 17, 10},
+        {2, 6, 12, 15},
+        {6, 8, 13, 20}
+    };
+    int[][] matrix2 = new int[4][4];
+    System.out.println(matrix1[2][3]); // 20
+    System.out.println(matrix2[3][3]); // 0
+    
+    
+
+
+
+
+
+
