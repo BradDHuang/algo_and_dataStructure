@@ -64,9 +64,73 @@ class Student {
 }
 
 
+Encapsulation in java
+    a process of wrapping code and data together into a single unit.
+
+We can create a fully encapsulated class in java 
+by making all the data members of the class private. 
+Now we can use setter and getter methods to set and get the data in it.
+
+Advantage of Encapsulation in java:
+    By providing only setter or getter method, 
+    you can make the class read-only or write-only.
+
+It provides you the control over the data. 
+    Suppose you want to set the value of id i.e. greater than 100 only, 
+    you can write the logic inside the setter method.
 
 
+        Student student1 = new Student();
+        Student student2 = new Student();
+        student1.name = "Brad";
+        student2.name = "Ben";
+        System.out.println("name1: " + student1.name + ", name2: " + student2.name);
+        student2.name = "Martin";
+        System.out.println("name1: " + student1.name + ", name2: " + student2.name);
+    // reference:
+    // copy address.
+        student2 = student1;
+        System.out.println("name1: " + student1.name + ", name2: " + student2.name);
+        student2.name = "Snow";
+        System.out.println("name1: " + student1.name + ", name2: " + student2.name);
+        Student student3 = new Student();
+        student3.name = "Jon";
+        Student temp = student3;
+        student3 = student2;
+        student2 = temp;
+        System.out.println("name2: " + student2.name + ", name3: " + student3.name);
+    /*
+    name1: Brad, name2: Ben
+    name1: Brad, name2: Martin
+    name1: Brad, name2: Brad
+    name1: Snow, name2: Snow
+    name2: Jon, name3: Snow
+    */
+    
+    
+    int[] arr1 = new int[3];
 
+    int[][] arr2 = new int[3][3];
+    arr2[0] = new int[9];
+    System.out.println(arr2[0][8]); // 0
+    
+    
+    String str1 = "string";
+    String str2 = new String("string2"); // class
+    
+    
+    ArrayList<Integer> arrayList = new ArrayList<>();
+    arrayList.add(0);
+    System.out.println(arrayList); // [0]
+    arrayList.add(5);
+    System.out.println(arrayList); // [0, 5]
+    arrayList.add(0, 1);
+    System.out.println(arrayList); // [1, 0, 5]
+    System.out.println(arrayList.get(1)); // 0
+    arrayList.remove(1);
+    System.out.println(arrayList); // [1, 5]
+    arrayList.set(1, 3);
+    System.out.println(arrayList); // [1, 3]
 
 
 
