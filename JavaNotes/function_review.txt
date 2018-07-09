@@ -1,0 +1,78 @@
+
+
+Why using func.?
+    1. code Reuse;
+    2. Readability.
+    
+    
+input -> func. -> output
+
+
+String:
+    String str = "I am ";
+    str += "Brad";  // concat
+    System.out.println(str);
+    
+    System.out.println(str.length());   // 9
+    
+    String s = "new";
+    for (int i = 0; i < s.length(); i++) {
+        char ch = s.charAt(i);
+        System.out.println(ch);
+    }
+    
+    int age = 24;
+    str = "I am " + age + " years old.";
+    String str2 = "I am " + age + 1 + " years old.";    // I am 241 years old.
+    String str3 = "I am " + (age + 1) + " years old.";
+    
+        boolean boo = false;
+        str2 += boo;
+        System.out.println(str2);   // I am 241 years old.false
+        
+        float f = 1.23f;
+        str3 += f;
+        System.out.println(str3);   // I am 25 years old.1.23
+        
+
+Object-oriented programming (OOP):
+    a programming paradigm 
+    based on the concept of "objects", 
+        which may contain:
+            data, 
+            in the form of fields, often known as 
+         1. attributes; 
+            and code, 
+            in the form of procedures, often known as 
+         2. methods. 
+                          
+A feature of objects is that an object's procedures can access and often modify 
+    the data fields of the object 
+    with which they are associated (objects have a notion of "this" or "self"). 
+
+class Student {
+    public int score;
+    public String name;
+
+    public static void main(String[] args) {
+        Student student = new Student(); // instance
+        student.score = 90;
+        student.name = "Brad";
+        System.out.println("score: " + student.score + ", name: " + student.name);
+        // score: 90, name: Brad
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
