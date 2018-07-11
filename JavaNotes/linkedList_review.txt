@@ -83,6 +83,21 @@
         }
         System.out.println(head.val);
         
+        
+        ListNode d = new ListNode(-1);
+//        System.out.println(d.next);
+
+        ListNode head = new ListNode(2);
+        head.next = new ListNode(4);
+        head.next.next = new ListNode(6);
+
+        d.next = head;
+        int index = 1;
+        for (int i = 0; i <= index; i++) {
+            d = d.next;
+        }
+        System.out.println(d.val);
+        
 
     
         
