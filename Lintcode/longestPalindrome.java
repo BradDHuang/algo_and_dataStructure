@@ -38,3 +38,54 @@ public class Main {
         System.out.print(pa);
     }
 }
+
+
+    // brute force solution:
+    // O(n^3) time with O(1) space.
+package com.company;
+
+//import java.util.*;
+
+public class Main {
+
+    public static String longestPalindrome(String s) {
+
+//        char[] chars = s.toCharArray();
+        int len = s.length();
+        // len is kept as the length of the cur. palindrome
+        while (len >= 0) {
+            // sliding window with length of len
+            for (int i = 0; i + len - 1 < s.length(); i++) {
+                int left = i;
+                int right = i + len - 1;
+
+                boolean valid = true;
+                while (left < right) {
+                    if (s.charAt(left) != s.charAt(right)) {
+                        valid = false;
+                        break;
+                    }
+                    left++;
+                    right--;
+                }
+                if (valid) {
+                    return s.substring(i, i + len);
+                }
+            }
+            len--;
+        }
+        return "";
+    }
+    public static void main(String[] args) {
+
+        String s1 = "babad";
+        String s2 = "cbbdd";
+        System.out.println(longestPalindrome(s1)); // bab
+        System.out.println(longestPalindrome(s2)); // bb
+    }
+
+}
+
+
+
+
